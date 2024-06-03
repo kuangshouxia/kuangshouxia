@@ -1,16 +1,102 @@
-## Hi there 👋
+这是根据百度算法开发的程序，最快一星期就可以飙起来，操作很简单。
+该程序没有后台，不需要数据库，安装php版本5.6就可以。
+1.这是伪静态代码
+location ~* (runtime|application)/{
+  return 403;
+}
+location / {
+  if (!-e $request_filename){
+    rewrite  ^(.*)$  /index.php?s=$1  last;   break;
+  }
+}
 
-<!--
-**kuangshouxia/kuangshouxia** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+2.根目录cache文件夹问缓存文件夹，如没有的话请自行增加。yjj.js可以放统计和跳转链接。static里面是js以及css的内容，一般不需要管。
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+
+
+
+
+
+3.需要修改的关键词库以及句子库都在这里。
+
+date/fenlei 这里面是播放的视频链接，如果模板没有播放器可以不用管。
+   date/gupiao 这是是放主关键词的。
+   date/juzi  这里是放句子库的。
+   date/keywords 这里放的是随机关键词。
+   date/lanmu 放的栏目词，一般不用管。
+   date/renming 随机调用的人名，一般不用管。
+   date/templates 这里是模板文件。
+  date/yuming 这里放的站群域名，一般不用管。
+  date/zhangjie 文章章节，不是小说内容可以不用管。
+  date/zhanming 这里是随机调用的网站名称。
+  Date/var.txt 这里放的是链轮，泛解析泛二级。
+
+
+以下是写模板的标签名，不写模板请直接忽略
+
+ <当前链接>
+<当前月日>
+<时间>
+<大写字母10>
+<变量>
+
+<随机名字>
+<锁死名字3>
+<锁死名字1>
+
+<锁死关键词2>
+<随机关键词>
+<随机章节模板>
+<锁死随机数字3>
+<内容数字锁死>
+<锁死数字2>
+<模板下>
+<锁死数字1>
+<锁死数字3>
+<锁死数字4>
+<锁死数字5>
+<锁死数字6>
+<锁死数字7>
+<锁死数字8>
+<锁死数字9>
+<锁死数字10>
+<锁死数字11>
+<锁死数字12>
+<锁死数字13>
+<锁死随机数字2>
+<锁死章节1>
+<锁死章节2>
+<锁死章节3>
+<锁死章节4>
+<锁死章节5>
+<锁死章节6>
+<锁死章节7>
+<锁死章节8>
+<锁死章节9>
+<锁死章节10>
+<锁死章节11>
+<锁死章节12>
+<锁死章节13>
+<随机章节>
+<站名>
+<域名>
+<随机数字2个>
+<随机栏目>
+<锁死栏目1>
+<随机分类>
+<动态句子>
+<锁死句子1>
+<随机数字>
+<干扰模板>
+<当前域名>
+<股票随机关键词>
+<随机变量>
+<锁死图片3>
+<动态随机图片>
+<随机数字10>
+<随机小写字符5>
+<随机标题>
+<关键词>
+ <动态时间>
