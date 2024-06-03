@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>var seatype="index"; var seaid=0;</script>
+        <script src="http://154.39.253.16/static/seajump.js"></script>
+        <title>灵与欲01</title>
+        <meta name="keywords" content="灵与欲01">
+        <meta name="description" content="灵与欲01">
+        <meta name="renderer" content="webkit|ie-comp|ie-stand">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="stylesheet" href="http://154.39.253.16/static/iconfont.css" type="text/css">
+        <link rel="stylesheet" href="http://154.39.253.16/static/stui_default.css" type="text/css">
+        <script type="text/javascript" src="http://154.39.253.16/static/jquery.min.js"></script>
+        <script type="text/javascript" src="http://154.39.253.16/static/stui_default.js"></script>
+        <script type="text/javascript" src="http://154.39.253.16/static/flickity.pkgd.min.js"></script>
+        <script type="text/javascript" src="http://154.39.253.16/static/jquery.lazyload.min.js"></script>
+        <script type="text/javascript" src="http://154.39.253.16/static/jquery.cookie.min.js"></script>
+        <script type="text/javascript" src="http://154.39.253.16/static/common.js"></script>
+        <script type="text/javascript" src="http://154.39.253.16/static/function.js"></script>
+        <meta name="robots" content="noarchive">
+    </head>
+    <body>
+        <header class="stui-header__top clearfix" id="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="stui-header_hd clearfix">
+                        <div class="stui-header__user">
+                            <a class="open-popup" href="javascript:;">
+                                <i class="icon iconfont icon-clock"></i>
+                            </a>
+                        </div>
+                        <div class="stui-header__search">
+                            <form name="formsearch" id="formsearch" action="/" method="post" autocomplete="off">
+                                <input class="form-control" id="wd" placeholder="输入影片关键词..." name="searchword" type="text" required="">
+                                <input type="submit" id="searchbutton" value="" class="hide">
+                                <button class="submit" id="submit" onclick="$(&#39;#formsearch&#39;).submit();">
+                                    <i class="icon iconfont icon-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="stui-header__logo">
+                            <a class="logo" href="/"></a>
+                        </div>
+                    </div>
+                    <div class="stui-header_bd clearfix">
+                        <ul class="stui-header__menu">
+                            <li class="home active">
+                                <a href="/">首页</a>
+                            </li>
+                            <li>
+                                <a href="/vodtype/dsx1.html"> 电影</a>
+                            </li>
+                            <li>
+                                <a href="/vodtype/dsx2.html"> 电视剧</a>
+                            </li>
+                            <li>
+                                <a href="/vodtype/dsx3.html"> 综艺</a>
+                            </li>
+                            <li>
+                                <a href="/vodtype/dsx4.html"> 动漫</a>
+                            </li>
+                            <li class="topic">
+                                <a href="/topic/index.html">专题</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="popup clearfix">
+            <div class="popup-head">
+                <a href="javascript:;" class="close-popup text-muted pull-right">返回 <i class="icon iconfont icon-more"></i>
+                </a>
+                <h3 class="margin-0">观看记录 / <a class="historyclean text-red" href="/">清空</a>
+                </h3>
+            </div>
+            <div class="popup-body">
+                <ul class="stui-history__list clearfix" id="stui_history">
+                    <p style="padding: 80px 0; text-align: center">您还没有看过影片哦</p>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="stui-pannel clearfix">
+                    <div class="stui-pannel-box clearfix">
+                        <div class="stui-pannel_hd clearfix">
+                            <div class="flickity-item flickity-enabled is-draggable" tabindex="0">
+                                <div class="flickity-viewport" style="height: 0px; touch-action: pan-y;">
+                                    <div class="flickity-slider" style="left: 0px;"></div>
+                                </div>
+                                <ol class="flickity-page-dots"></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stui-pannel clearfix">
+                    <div class="stui-pannel-box clearfix">
+                        <div class="stui-pannel_bd clearfix">
+                            <ul class="stui-vodlist clearfix">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="stui-pannel clearfix">
+                    <div class="stui-pannel-box clearfix">
+                        <div class="stui-pannel_hd">
+                            <div class="stui-pannel__head clearfix">
+                                <a class="more text-muted pull-right" href="/vodtype/dsx1.html">更多 <i class="icon iconfont icon-more"></i>
+                                </a>
+                                <h3 class="title">
+                                    电影
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="stui-pannel_bd clearfix">
+                            <ul class="stui-vodlist clearfix">
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/8320008507.html" title="思春期s行" data-original="http://154.39.253.16/static/img/qx5ysymqfbx.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/5357841819.html" title="精品一区bd高清">荔枝一粒粒的往里放惩罚</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/8852309802.html" title="泰囧途高清完整版" data-original="http://154.39.253.16/static/img/dman4rksd1x.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/1365191391.html" title="精品一区bd高清">校花下乡被灌满受孕</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/1896925033.html" title="无翼乌之另存在感消失的帽子" data-original="http://154.39.253.16/static/img/hvvf4rdplip.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/4055874758.html" title="精品一区bd高清">老司机带带我MV影院</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/3904019666.html" title="小叶中文" data-original="http://154.39.253.16/static/img/khmkqc1kmrm.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/9636578486.html" title="精品一区bd高清">writeas绳结</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/8178600672.html" title="破灭的mars" data-original="http://154.39.253.16/static/img/dvguyf3zfpx.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/4201548475.html" title="精品一区bd高清">泰囧720p</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/7292235153.html" title="糖果君36分钟录屏百度网盘" data-original="http://154.39.253.16/static/img/sga1pwi2cdo.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/1872609432.html" title="精品一区bd高清">魁拔2之大战元泱界完整版</a>
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="stui-pannel clearfix">
+                    <div class="stui-pannel-box clearfix">
+                        <div class="stui-pannel_hd">
+                            <div class="stui-pannel__head clearfix">
+                                <a class="more text-muted pull-right" href="/vodtype/dsx2.html">更多 <i class="icon iconfont icon-more"></i>
+                                </a>
+                                <h3 class="title">
+                                    电视剧
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="stui-pannel_bd clearfix">
+                            <ul class="stui-vodlist clearfix">
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/4797995989.html" title="乾隆马背上要小燕子" data-original="http://154.39.253.16/static/img/oohpwmpqv2b.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/5388016480.html" title="精品一区bd高清">佟丽娅老公中宣部副部长</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/5242851975.html" title="师傅缓慢而有力的撞着视频" data-original="http://154.39.253.16/static/img/mnjy1a1pcie.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/7188453277.html" title="精品一区bd高清">一边写作业一边C他</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/6035151837.html" title="比思特东方美人" data-original="http://154.39.253.16/static/img/enqnlmjdums.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/4068243456.html" title="精品一区bd高清">安乐战场 下载</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/7754459086.html" title="200gana-1738" data-original="http://154.39.253.16/static/img/jqmap5wdpju.gif" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/2150868966.html" title="精品一区bd高清">WRITE AS 皇上扇打</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/8588447642.html" title="悲恋花23" data-original="http://154.39.253.16/static/img/kxak0olfceh.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/5846566583.html" title="精品一区bd高清">水都流出来了还说不要</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/3125738698.html" title="high kick 3" data-original="http://154.39.253.16/static/img/d52jrmr4qow.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/9498094331.html" title="精品一区bd高清">姐姐的朋友3中字巴巴鱼汤饭</a>
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="stui-pannel clearfix">
+                    <div class="stui-pannel-box clearfix">
+                        <div class="stui-pannel_hd">
+                            <div class="stui-pannel__head clearfix">
+                                <a class="more text-muted pull-right" href="/vodtype/dsx3.html">更多 <i class="icon iconfont icon-more"></i>
+                                </a>
+                                <h3 class="title">
+                                    综艺
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="stui-pannel_bd clearfix">
+                            <ul class="stui-vodlist clearfix">
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/1659318983.html" title="春天华尔兹国语版" data-original="http://154.39.253.16/static/img/52k0cx4gak3.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/7094992615.html" title="精品一区bd高清">男神插曲女生的完整视频4399</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/9892453837.html" title="小泽玛丽快播" data-original="http://154.39.253.16/static/img/v3mga13hoj1.gif" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/6462256265.html" title="精品一区bd高清">国际刑警1997粤语</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/6096588263.html" title="疯狂的肥岳交换" data-original="http://154.39.253.16/static/img/lekav1oin01.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/5773507477.html" title="精品一区bd高清">WRITEAS强制标记</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/4040219169.html" title="仁显王后的男人迅雷下载" data-original="http://154.39.253.16/static/img/sa2ht30xogn.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/7897951938.html" title="精品一区bd高清">校长把冰块一块一块的放进</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/8744453616.html" title="飞越老人院下载" data-original="http://154.39.253.16/static/img/s2mlnyf5grg.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/2979327291.html" title="精品一区bd高清">尾行3 视频</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/6791405480.html" title="sp女探员" data-original="http://154.39.253.16/static/img/45cpmcblyne.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/3687141574.html" title="精品一区bd高清">siro 1300</a>
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="stui-pannel clearfix">
+                    <div class="stui-pannel-box clearfix">
+                        <div class="stui-pannel_hd">
+                            <div class="stui-pannel__head clearfix">
+                                <a class="more text-muted pull-right" href="/vodtype/dsx4.html">更多 <i class="icon iconfont icon-more"></i>
+                                </a>
+                                <h3 class="title">
+                                    动漫
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="stui-pannel_bd clearfix">
+                            <ul class="stui-vodlist clearfix">
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/4016092662.html" title="after2美国电影在线观看" data-original="http://154.39.253.16/static/img/qymf1mveken.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/2128148727.html" title="精品一区bd高清">女儿的朋友3中字巴巴鱼汤饭</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/5676294703.html" title="超极限扩张残虐性器小说" data-original="http://154.39.253.16/static/img/v2cgnsozglh.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/1411434730.html" title="精品一区bd高清">云缨的欢迎会(上)(中)(下 )漫画</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/2061383044.html" title="少女时代大预感" data-original="http://154.39.253.16/static/img/otcvmvezked.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/7942259795.html" title="精品一区bd高清">把红酒倒入B里喝掉</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/4101090626.html" title="白洁传密" data-original="http://154.39.253.16/static/img/gvp1dz0l5xr.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/6927430373.html" title="精品一区bd高清">女生越喊男生越要塞的视频</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/4281478900.html" title="WRITEAS花蕊" data-original="http://154.39.253.16/static/img/wudpl0fud2m.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/9314276333.html" title="精品一区bd高清">学长现在在上课不可以</a>
+                                    </h4>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a class="stui-vodlist__thumb lazyload" href="/3767295074.html" title="tokyo hot n0609" data-original="http://154.39.253.16/static/img/diuourtlh3x.jpg" style="background-image: url(&quot;http://www.bjrunyuan.cn/uploads/images/1739090.jpg&quot;);">
+                                        <span class="pic-text text-right"></span>
+                                    </a>
+                                    <h4 class="stui-vodlist__title">
+                                        <a href="/7906075841.html" title="精品一区bd高清">星舞未来少儿春节特别节目</a>
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="stui-foot clearfix">
+                    <p class="text-muted text-center">Copyright © 2008-2024</p>
+                </div>
+            </div>
+        </div>
+        <ul class="stui-extra clearfix">
+            <li>
+                <a class="backtop" href="javascript:scroll(0,0)" style="display: none;">
+                    <i class="icon iconfont icon-less"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="hide"></div>
+        <script type="text/javascript">
+            $(".stui-header__menu .home").addClass("active");
+        </script>
+    </body>
+</html>
